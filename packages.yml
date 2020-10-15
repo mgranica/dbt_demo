@@ -1,0 +1,6 @@
+packages:
+  - package: fishtown-analytics/adwords
+    version: 0.2.10
+
+  - package: fivetran/salesforce
+    version: 0.1.0
