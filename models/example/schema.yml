@@ -1,6 +1,19 @@
 
 version: 2
 
+sources:
+    - name: Lead
+      database: d7jmpjbun7g7bg
+      schema: fa_r1_sf_lead
+      loader: Stitch # information only (free text)
+      # loader_at_field: field_name  use to calculate freshness
+      
+    - name: Opportunity
+      database: d7jmpjbun7g7bg
+      schema: fa_r1_sf_lead
+
+      #freshness:
+        #warm_after: {count: 24, period: hour}
 models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
